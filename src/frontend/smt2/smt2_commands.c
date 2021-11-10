@@ -6346,7 +6346,7 @@ void smt2_set_logic(const char *name) {
     return;
   }
 
-  // if the logic requires MCSAT, check whether this was compiled withn MCSAT support
+  // if the logic requires MCSAT, check whether this was compiled with MCSAT support
   if (logic_requires_mcsat(code) && !yices_has_mcsat()) {
     print_error("logic %s is not supported since yices was not built with mcsat support", name);
     return;
